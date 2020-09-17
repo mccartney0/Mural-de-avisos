@@ -1,0 +1,160 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+body{
+    margin: 0 auto;
+    max-width: 1200px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1{
+    padding: 5px;
+    color: rgb(22, 122, 126);
+}
+
+h1,input,textarea,button{
+    margin-bottom: 15px;
+}
+
+input,textarea,button{
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid cadetblue;
+    outline: none;
+}
+
+input{
+    width: 200px;
+    height: 25px;
+}
+
+textarea{
+    width: 400px;
+    height: 80px;
+    min-height: 50px;
+    max-height: 150px;
+    resize: vertical;
+}
+
+button{
+    width: 110px;
+    padding: 10px;
+    background-color: rgba(95, 158, 160, 0.418);
+    cursor: pointer;
+
+}
+
+button:hover{
+    background-color: cadetblue;
+}
+
+.card-title{
+    background-color: cadetblue;
+    font-size: 17px;
+    height: 15px;
+
+}
+
+.card-title,.card-body{
+    width: 800px;
+    padding: 10px;
+    border-radius: 1px;
+}
+
+.card-body{
+    height: 30px;
+    margin-bottom: 5px;
+    background-color: rgba(95, 158, 160, 0.541);
+    font-size: 14px;
+}
+
+span{
+    cursor: pointer;
+    color: rgb(255, 0, 0);
+    float: right;
+}
+
+#id{
+    display: none;
+}
+@media(max-width: 800px){
+    .card-title,.card-body{
+        width: 400px;
+    }
+}
+
+@media(max-width: 500px){
+    input{
+        width: 70px;
+    }
+    
+    textarea{
+        width: 150px;
+    }
+    
+    button{
+        width: 80px;
+    }
+
+    .card-title,.card-body{
+        width: 100px;
+    }
+
+    .card-title{
+        font-size: 13px;
+    }
+    
+    .card-body{
+        height: 70px;
+        font-size: 11px;
+    }
+}
